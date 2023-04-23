@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  .box {
+    color: #000;
+  }
+
+  /*后代,包括儿子，孙子，重孙...*/
+  div span {
+    color: red;
+  }
+
+  /*子代选择器*/
+  div>span {
+    color: green;
+  }
+
+  /*并集选择器*/
+  p,
+  div {
+    color: blue;
+  }
+
+  /* 带有box类的p标签 */
+  /*交集选择器*/
+  p.box {
+    color: cyan;
+  }
+</style>
+
+<body>
+
+  <p>这是一个p标签</p>
+  <div>
+    <span>这是div的儿子标签</span>
+  </div>
+  <div>
+    <p>
+      <span>这是div的孙子标签p</span>
+    </p>
+  </div>
+
+
+</body>
+
+</html>

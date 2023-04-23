@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伸缩比</title>
+  <style>
+      * {
+          padding: 0;
+          margin: 0;
+      }
+
+      .box {
+          display: flex;
+          height: 300px;
+          border: 1px solid #000;
+      }
+
+      .box div {
+          margin: 0 10px;
+          background-color: lightpink;
+          border: 1px solid skyblue;
+      }
+
+      .box div:nth-child(2) {
+          flex: 1;
+      }
+
+      .test div {
+          margin: 5px;
+          width: 200px;
+          height: 100px;
+          background-color: skyblue;
+          border: 1px solid #000;
+      }
+
+      .test div:first-child {
+          opacity: 0.5;
+      }
+  </style>
+</head>
+<body>
+<div class="box">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<div class="test">
+  <div></div>
+  <div></div>
+</div>
+</body>
+</html>
